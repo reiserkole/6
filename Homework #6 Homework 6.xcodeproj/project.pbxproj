@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		48457E3529F9A90D00723672 /* webViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48457E3429F9A90D00723672 /* webViewController.swift */; };
 		48BBF67B29F6F35D00A718CE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48BBF67A29F6F35D00A718CE /* AppDelegate.swift */; };
 		48BBF67D29F6F35D00A718CE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48BBF67C29F6F35D00A718CE /* SceneDelegate.swift */; };
 		48BBF67F29F6F35D00A718CE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48BBF67E29F6F35D00A718CE /* ViewController.swift */; };
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		48457E3429F9A90D00723672 /* webViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = webViewController.swift; sourceTree = "<group>"; };
 		48BBF67729F6F35D00A718CE /* Homework #6 Homework 6.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Homework #6 Homework 6.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		48BBF67A29F6F35D00A718CE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		48BBF67C29F6F35D00A718CE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -103,6 +105,7 @@
 				48BBF67C29F6F35D00A718CE /* SceneDelegate.swift */,
 				48BBF67E29F6F35D00A718CE /* ViewController.swift */,
 				48BBF68029F6F35D00A718CE /* Main.storyboard */,
+				48457E3429F9A90D00723672 /* webViewController.swift */,
 				48BBF68329F6F35E00A718CE /* Assets.xcassets */,
 				48BBF68529F6F35E00A718CE /* LaunchScreen.storyboard */,
 				48BBF68829F6F35E00A718CE /* Info.plist */,
@@ -261,6 +264,7 @@
 				48BBF67F29F6F35D00A718CE /* ViewController.swift in Sources */,
 				48BBF67B29F6F35D00A718CE /* AppDelegate.swift in Sources */,
 				48BBF67D29F6F35D00A718CE /* SceneDelegate.swift in Sources */,
+				48457E3529F9A90D00723672 /* webViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

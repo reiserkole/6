@@ -40,6 +40,22 @@
             </objects>
             <point key="canvasLocation" x="-480.15267175572518" y="-135.21126760563382"/>
         </scene>
+        <!--Item-->
+        <scene sceneID="oRr-Xl-yMP">
+            <objects>
+                <viewController id="lY7-XK-1dz" customClass="webViewController" customModule="Homework__6_Homework_6" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6UX-cq-FFx">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="dPD-QJ-Bye"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="IVA-6k-wnO"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2Ud-0V-USz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1173" y="263"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="KZ0-p0-zzx">
             <objects>
@@ -82,6 +98,7 @@
                     <connections>
                         <segue destination="PEx-QQ-WoR" kind="relationship" relationship="viewControllers" id="ymz-Jd-r9c"/>
                         <segue destination="Den-0H-jwP" kind="relationship" relationship="viewControllers" id="DwS-M6-c0B"/>
+                        <segue destination="lY7-XK-1dz" kind="relationship" relationship="viewControllers" id="Vul-A6-GX0"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xhk-p3-Hjm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -94,6 +111,9 @@
         <image name="tionesta" width="275" height="183"/>
         <systemColor name="linkColor">
             <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemBrownColor">
             <color red="0.63529411764705879" green="0.51764705882352946" blue="0.36862745098039218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

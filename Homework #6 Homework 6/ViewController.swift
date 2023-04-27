@@ -4,16 +4,25 @@
 //
 //  Created by Kole Reiser on 4/24/23.
 //
+    import UIKit
+    import WebKit
 
-import UIKit
+    class ViewController: UIViewController, WKUIDelegate {
+        
+        var webView: WKWebView!
+        
+        override func loadView() {
+            let webConfiguration = WKWebViewConfiguration()
+            webView = WKWebView(frame: .zero, configuration: webConfiguration)
+            webView.uiDelegate = self
+            view = webView
+        }
 
-class ViewController: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        override func viewDidLoad() {
+            super.viewDidLoad()
+            
+            let myURL = URL(string:"https://www.apple.com")
+            let myRequest = URLRequest(url: myURL!)
+            webView.load(myRequest)
+        }
     }
-
-
-}
-
