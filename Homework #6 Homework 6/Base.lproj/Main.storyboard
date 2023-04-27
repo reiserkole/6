@@ -40,7 +40,7 @@
             </objects>
             <point key="canvasLocation" x="-480.15267175572518" y="-135.21126760563382"/>
         </scene>
-        <!--Item-->
+        <!--Website-->
         <scene sceneID="oRr-Xl-yMP">
             <objects>
                 <viewController id="lY7-XK-1dz" customClass="webViewController" customModule="Homework__6_Homework_6" customModuleProvider="target" sceneMemberID="viewController">
@@ -50,11 +50,54 @@
                         <viewLayoutGuide key="safeArea" id="dPD-QJ-Bye"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="IVA-6k-wnO"/>
+                    <tabBarItem key="tabBarItem" title="Website" image="safari" catalog="system" id="IVA-6k-wnO"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2Ud-0V-USz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1173" y="263"/>
+        </scene>
+        <!--Message-->
+        <scene sceneID="msh-Vn-bdY">
+            <objects>
+                <viewController id="rNx-Mv-V8N" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pcf-qD-YjY">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="9bn-ZM-Zcg">
+                                <rect key="frame" x="88" y="288" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Enter Phone Number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cSw-Ml-cwO">
+                                <rect key="frame" x="88" y="246" width="240" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="secondarySystemGroupedBackgroundColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" textContentType="tel"/>
+                                <connections>
+                                    <action selector="phoneNumber:" destination="gtJ-e8-h8N" eventType="editingDidEnd" id="TIe-qP-NWn"/>
+                                </connections>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i96-bv-eyf">
+                                <rect key="frame" x="155" y="424" width="82" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Send"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="oMI-1D-gYy"/>
+                        <color key="backgroundColor" systemColor="systemRedColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Message" image="message" catalog="system" id="bhp-sL-iN4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Z0N-R4-bMw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="gtJ-e8-h8N" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="-480.15267175572518" y="517.6056338028169"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="KZ0-p0-zzx">
@@ -99,6 +142,7 @@
                         <segue destination="PEx-QQ-WoR" kind="relationship" relationship="viewControllers" id="ymz-Jd-r9c"/>
                         <segue destination="Den-0H-jwP" kind="relationship" relationship="viewControllers" id="DwS-M6-c0B"/>
                         <segue destination="lY7-XK-1dz" kind="relationship" relationship="viewControllers" id="Vul-A6-GX0"/>
+                        <segue destination="rNx-Mv-V8N" kind="relationship" relationship="viewControllers" id="n9J-P8-nkf"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xhk-p3-Hjm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -106,11 +150,20 @@
             <point key="canvasLocation" x="-1468" y="-457"/>
         </scene>
     </scenes>
+    <color key="tintColor" systemColor="secondarySystemGroupedBackgroundColor"/>
     <resources>
         <image name="mappin" catalog="system" width="106" height="128"/>
+        <image name="message" catalog="system" width="128" height="116"/>
+        <image name="safari" catalog="system" width="128" height="123"/>
         <image name="tionesta" width="275" height="183"/>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="linkColor">
             <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="secondarySystemGroupedBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -120,6 +173,9 @@
         </systemColor>
         <systemColor name="systemGreenColor">
             <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
